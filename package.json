@@ -1,0 +1,25 @@
+{
+  "name": "air-traffic-controller",
+  "version": "1.0.0",
+  "description": "This is a slack integration with chat-gpt that outputs direction to an end containing proper channels for support based on an input question",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat-gpt",
+    "slackbot",
+    "slack",
+    "bot",
+    "air",
+    "traffic",
+    "controller",
+    "chatbot",
+    "support"
+  ],
+  "author": "Aaron Brandenberger",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.16.0"
+  }
+}
