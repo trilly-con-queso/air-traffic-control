@@ -10,6 +10,12 @@ const app = new App({
   port: process.env.PORT || 3000
 });
 
+// Listens to incoming messages that contain "hello"
+app.message('hello', async ({ message, say }) => {
+  // say() sends a message to the channel where the event was triggered
+  await say(`Hey there <@${message.user}>!`);
+});
+
 (async () => {
   // Start app
   await app.start(process.env.PORT || 3000);
