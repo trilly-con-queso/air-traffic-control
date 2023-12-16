@@ -3,8 +3,10 @@ require('dotenv').config();
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-  token: process.env.BOT_USER_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET
+  token: process.env.SLACK_BOT_TOKEN,
+  signingSecret: process.env.SLACK_SIGNING_SECRET,
+  socketMode: true, // add this
+  appToken: process.env.SLACK_APP_TOKEN // add this
 });
 
 (async () => {
